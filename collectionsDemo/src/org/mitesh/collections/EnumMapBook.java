@@ -6,9 +6,7 @@ public class EnumMapBook {
 
     public enum Key {
         One, Two, Three
-    }
-
-    ;
+    };
 
     public static void main(String[] args) {
 
@@ -27,7 +25,7 @@ public class EnumMapBook {
         // Traversing EnumMap
         for (Map.Entry<Key, Book> entry : map.entrySet()) {
             Book b = entry.getValue();
-            System.out.println(b.id + " " + b.name + " " + b.author + " " + b.publisher + " " + b.quantity);
+            System.out.println("Key is: " + entry.getKey() + ". " + b.id + " " + b.name + " " + b.author + " " + b.publisher + " " + b.quantity);
         }
     }
 }
